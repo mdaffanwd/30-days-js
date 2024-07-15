@@ -1,3 +1,5 @@
+const prompt = require('prompt-sync')();
+
 // --> Activity 1: If-Else Statements <--
 let num = prompt('enter number to check whether is positive or negative')
 
