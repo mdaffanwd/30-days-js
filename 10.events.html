@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Handling</title>
+    <script src="10.EventHandling.js" defer></script>
+    <style>
+      .hidden {
+        visibility: hidden;
+      }
+      label,
+      input {
+        margin: 0.8rem;
+      }
+      input {
+        padding: 0.4rem;
+      }
+      input[type="submit"],
+      button {
+        padding: 0.6rem 1rem;
+      }
+      img {
+        display: inline-block;
+        z-index: 9;
+      }
+      .cont {
+        margin-bottom: 1rem;
+      }
+      .container{
+        width: 80%;
+        margin: auto;
+      }
+      .vis-text {
+        color: #000;
+        padding: 1rem;
+        position: absolute;
+      }
+      .img-container {
+        height: 225px;
+        width: 225px;
+        background-color: #ebeb6b;
+        display: grid;
+        place-items: center;
+        position: relative;
+        color: #000;
+      }
+      .mouse-event {
+        height: 5rem;
+        width: 20rem;
+        background-color: #ebeb6b;
+        color: #000;
+        position: relative;
+      }
+      option {
+        padding: 1rem;
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body style="background-color: #313131; color: #fff">
+    <div class="container">
+      <h2 class="para">click the below button</h2>
+      <button style="margin-bottom: 1rem" class="btn">Change text</button>
+      <hr />
+      <div class="img-container">
+        <h2 class="vis-text">double click to make the image visible</h2>
+        <img
+          class="vis-img hidden"
+          src="https://avatars.githubusercontent.com/u/140935888?v=4"
+          alt=""
+          width="200"
+        />
+      </div>
+      <hr />
+      <div class="mouse-event cont">
+        <h3 class="mouse-h">Hover to change the bgColor</h3>
+      </div>
+      <hr />
+      <div class="input-cont cont">
+        <label for="input"
+          >Enter a key in a keyboard:-
+          <input type="text" name="input" id="input"
+        /></label>
+        <h3>Clicked key is:- <span class="key"></span></h3>
+      </div>
+      <hr />
+      <div class="input-para cont">
+        <h3>Live Output:-</h3>
+        <label for="inputPara"
+          >Type Here:- <input type="text" name="input" id="inputPara"
+        /></label>
+        <p class="output"></p>
+      </div>
+      <hr />
+      <form>
+        <h2>Form</h2>
+        <label for="name"
+          >Full Name:-
+          <input
+            type="text"
+            placeholder="Enter Your Name"
+            name="name"
+            id="name" /></label
+        ><br />
+        <label for="mobile"
+          >Mobile No.:-<input
+            type="tel"
+            name="mobile"
+            id="mobile"
+            placeholder="Enter Your Mobile"
+        /></label>
+        <br />
+        <input type="submit" value="Submit" />
+      </form>
+      <hr />
+      <div>
+        <h3>Select any option</h3>
+        <select id="mySelect">
+          <option value="Select">Select</option>
+          <option value="HTML">HTML</option>
+          <option value="CSS">CSS</option>
+          <option value="JavaScript">JavaScript</option>
+        </select>
+        <p>You Selected:- <span id="display"></span></p>
+      </div>
+      <hr />
+      <div class="ul-list">
+        <h3>Click on any li element</h3>
+        <ul id="itemList">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <p>Clicked on:- <span class="displayLi"></span></p>
+        </ul>
+      </div>
+      <hr />
+      <div class="dynamic-childs">
+        <h2>Dynamically adding li</h2>
+        <ul id="itemList2">
+          <li>Item 1</li>
+        </ul>
+        <button id="addItem">Add Item</button>
+        <p>Clicked on:- <span class="displayLi2"></span></p>
+      </div>
+      <br /><br /><br />
+    </div>
+    <h1>
+      This one took really a lot of time to COMPLETE. ALHAMDULILLAAH, finally I
+      did it.
+    </h1>
+    <!-- =================== -->
+  </body>
+</html>
