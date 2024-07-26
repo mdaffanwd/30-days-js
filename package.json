@@ -4,5 +4,8 @@
     "lodash-es": "^4.17.21",
     "prompt-sync": "^4.2.0"
   },
-  "type": "module"
+  "type": "module",
+  "devDependencies": {
+    "webpack-cli": "^5.1.4"
+  }
 }
