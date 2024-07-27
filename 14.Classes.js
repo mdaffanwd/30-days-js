@@ -88,12 +88,52 @@ const student2 = new Student("student2", 22);
 // Activity 4: Getters and Setters
 // =============================
 // task 7
-const userFull = new Person('Md', 'Affan', 20)
+const userFull = new Person("Md", "Affan", 20);
 // console.log(userFull.fullname);
 // task 8
-userFull.newName = 'Mohammed'
-userFull.newLastName = 'Hassan'
-// console.log(userFull);   
+userFull.newName = "Mohammed";
+userFull.newLastName = "Hassan";
+// console.log(userFull);
 
+// =============================
+// Activity 5: Private Fields (Optional)
+// =============================
+// task 9
+class Account {
+  #balance;
+  constructor(initialAmount) {
+    if (initialAmount < 0) {
+      throw new Error("Initial balance cannot be negative");
+    }
+    this.#balance = initialAmount;
+  }
+  depositMoney(amount) {
+    if (amount > 0) {
+      this.#balance += amount;
+      console.log(`Deposited: ${amount}`);
+    } else {
+      console.log("Deposit amount must be positive");
+    }
+  }
+  withdrawMoney(amount) {
+    if (amount > 0 && amount <= this.#balance) {
+      this.#balance -= amount;
+      console.log(`Withdrew: ${amount}`);
+    } else if (amount > this.#balance) {
+      console.log("Entered Amount is more than than your balance");
+    }else{
+      console.log("Invalid withdrawal amount");
+    }
+  }
+  getBalance() {
+    console.log(this.#balance);
+  }
+}
 
-
+// task 10
+const account1 = new Account(10000);
+// account1.getBalance();
+// account1.depositMoney(500);
+// account1.getBalance();
+// account1.withdrawMoney(1500);
+// account1.getBalance();
