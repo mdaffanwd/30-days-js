@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #3131ab;
+  color: #fff;
+}
+img {
+  display: inline-block;
+}
+.container {
+  margin: auto;
+  width: 80%;
+  max-width: 1124px;
+  text-align: center;
+  /* font-size: 1.3rem; */
+}
+.search-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 80%;
+  margin: auto;
+}
+input.searchCity {
+  font-size: 1.2rem;
+  flex-grow: 1;
+  padding: 0.7em 1em;
+  width: 100%;
+  border-radius: 20px;
+  outline: none;
+}
+.search-container button {
+    all:  unset;
+    border: none;
+    outline: none;
+  font-size: 2rem;
+  position: absolute;
+  right: 0;
+
+  color: #000;
+  padding-inline-end: 0.4em;
+}

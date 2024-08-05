@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+
+    <!-- fontawesome cdnjs -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Weather App</h1>
+      <form class="form">
+        <div class="search-container">
+          <input type="text" class="searchCity" placeholder="Enter City" />
+          <button type="submit" class="search-btn">
+            <i class="fa-sharp-duotone fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
+      </form>
+
+      <div class="display-details">
+        <h2 class="city-name"></h2>
+        <div class="temperature-container">
+          <img src="imgs/clouds.svg" alt="temp Img" />
+          <p>
+            <span class="temperature"></span>
+            <span>°c</span>
+          </p>
+        </div>
+      </div>
+
+      <div class="display-time">
+        <p title="Current time">
+          <span class="hour"></span>:<span class="minute"></span
+          >&nbsp;<span class="meridiem"></span>
+        </p>
+        <p>
+          <span class="day"></span>
+          <span class="date"></span>
+          <span class="month"></span>
+          <span class="year"></span>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
