@@ -2,11 +2,15 @@ let form = document.querySelector(".form");
 let searchBtn = document.querySelector(".search-btn");
 
 let cityInput = document.querySelector(".searchCity");
+cityInput.focus();
 let cityNameElement = document.querySelector(".city-name");
 let temperatureElement = document.querySelector(".temperature");
+let temperatureImg = document.querySelector(".temperature-img");
+let weatherCondition = document.querySelector(".weather-condition");
 
 let hoursElement = document.querySelector(".hour");
 let minutesElement = document.querySelector(".minute");
+let secondsElement = document.querySelector(".seconds");
 let meridiemElement = document.querySelector(".meridiem");
 
 let dayElement = document.querySelector(".day");
@@ -33,10 +37,17 @@ function displayWeather(data) {
   let {
     name,
     main: { temp },
+    weather: [{ main, description, icon }],
   } = data;
   cityNameElement.textContent = name;
   temp = temp - 273.15;
-  temperatureElement.textContent = temp.toFixed(0);
+  temperatureElement.textContent = temp.toFixed(0) + "°c";
+
+  temperatureImg.src = `https://openweathermap.org/img/wn/${icon}@2x.png`;
+
+  weatherCondition.textContent = main;
+
+  cityInput.value = "";
 }
 
 function displayTimeAndDate() {
@@ -47,12 +58,15 @@ function displayTimeAndDate() {
   meridiemElement.textContent = meridiem;
 
   hours = hours % 12 || 12;
-  hoursElement.textContent = hours.toString().padStart(2, "0");
+  hoursElement.textContent = hours.toString().padStart(2, "0") + ":";
 
   let minutes = timeNow.getMinutes();
   minutesElement.textContent = minutes.toString().padStart(2, "0");
 
-
+  let second = timeNow.getSeconds();
+  // console.log(second);
+  second = ":" + second.toString().padStart(2, "0") + " ";
+  secondsElement.textContent = second;
 
   const daysOfWeek = [
     "Sunday",

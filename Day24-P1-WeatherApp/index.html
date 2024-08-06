@@ -30,19 +30,19 @@
 
       <div class="display-details">
         <h2 class="city-name"></h2>
-        <div class="temperature-container">
-          <img src="imgs/clouds.svg" alt="temp Img" />
-          <p>
-            <span class="temperature"></span>
-            <span>°c</span>
-          </p>
-        </div>
+        <figure class="temperature-container">
+          <img class="temperature-img" src="" alt="" />
+          <figcaption class="temperature-details">
+            <p class="weather-condition"></p>
+            <p class="temperature-value"><span class="temperature"></span></p>
+          </figcaption>
+        </figure>
       </div>
 
       <div class="display-time">
         <p title="Current time">
-          <span class="hour"></span>:<span class="minute"></span
-          >&nbsp;<span class="meridiem"></span>
+          <span class="hour"></span><span class="minute"></span
+          ><span class="seconds"></span><span class="meridiem"></span>
         </p>
         <p>
           <span class="day"></span>
@@ -50,6 +50,13 @@
           <span class="month"></span>
           <span class="year"></span>
         </p>
+      </div>
+
+      <div class="five-day-forecast">
+        <h3>5-day Forecast</h3>
+        <div class="five-day-data">
+          
+        </div>
       </div>
     </div>
   </body>

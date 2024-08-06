@@ -4,6 +4,7 @@
 body {
   background-color: #3131ab;
   color: #fff;
+  margin-top: 5%;
 }
 img {
   display: inline-block;
@@ -19,25 +20,36 @@ img {
   display: flex;
   align-items: center;
   position: relative;
-  width: 80%;
+  width: 60%;
   margin: auto;
 }
 input.searchCity {
   font-size: 1.2rem;
   flex-grow: 1;
   padding: 0.7em 1em;
-  width: 100%;
+  max-width:  100%;
+  margin: auto;
   border-radius: 20px;
   outline: none;
 }
 .search-container button {
-    all:  unset;
-    border: none;
-    outline: none;
+  all: unset;
+  border: none;
+  outline: none;
   font-size: 2rem;
   position: absolute;
   right: 0;
-
   color: #000;
   padding-inline-end: 0.4em;
+}
+
+.temperature-img,
+.display-time {
+  background-color: #ffffff8b;
+  border-radius: 20px;
+}
+.display-time {
+  padding: 0.6rem 0;
+  width: 20%;
+  margin: auto;
 }
