@@ -28,7 +28,7 @@ body {
 }
 /* Utils */
 .container {
-  width: 90%;
+  width: 80%;
   max-width: 1220px;
   margin: auto;
 }
@@ -67,5 +67,6 @@ input {
 }
 .more-info-container{
     text-align: left;
+    margin-block-end: 6rem;
 }
 
