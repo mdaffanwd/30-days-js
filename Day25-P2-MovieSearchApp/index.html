@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>chaiWithMovies</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <nav class="navbar container">
+      <div class="logo">
+        <h1>chaiNchill</h1>
+      </div>
+      <div class="search-bar">
+        <form class="movie-form">
+          <input
+            type="text"
+            name="movie-search"
+            id="movie-search"
+            class="movie-search"
+            placeholder="Search Movie"
+          />
+          <button type="submit" class="btn form-btn">Search</button>
+        </form>
+      </div>
+      <!-- <div class="buttons-holder">
+        <button class="btn">Login</button>
+        <button class="btn">SignUp</button>
+      </div> -->
+    </nav>
+
+    <div class="movie-container container">
+      <h2 class="movie-name"></h2>
+      <img class="movie-poster" src="" />
+      <p class="movie-year"></p>
+      <button class="more-info-btn hidden">More Info</button>
+
+      <div class="more-info-container">
+        <p class="movie-plot"></p>
+        <p class="movie-director"></p>
+        <p class="movie-actors"></p>
+      </div>
+    </div>
+  </body>
+</html>
