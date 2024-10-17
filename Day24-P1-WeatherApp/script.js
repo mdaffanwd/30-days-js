@@ -18,7 +18,7 @@ let dateElement = document.querySelector(".date");
 let monthElement = document.querySelector(".month");
 let yearElement = document.querySelector(".year");
 
-const apiId = `d617f9e2b85c1b5e9e8394fba8836928`;
+const apiId = ``;
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
